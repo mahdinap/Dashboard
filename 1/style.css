@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: beige;
+
+}
+.menu {
+  border: 1px solid antiquewhite;
+  width: 257px;
+  height: 100dvh;
+  padding-top: 20px;
+  background-color: antiquewhite;
+}
+.menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.menu li:not(:first-child):hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.menu li:first-child:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.menu.hide{
+    width: 100px;
+}
