@@ -1,35 +1,107 @@
+@font-face {
+  font-family: "ubuntu";
+  src: url(Ubuntu-Light.woff2);
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 300;
 }
-body {
-  background-color: beige;
+:root {
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #695cfe;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --padding: 10px;
+}
 
+body {
+  background-color: var(--body-color);
+  display: flex;
 }
-.menu {
-  border: 1px solid antiquewhite;
-  width: 257px;
-  height: 100dvh;
-  padding-top: 20px;
-  background-color: antiquewhite;
+
+.sidebar .image-text img {
+  width: 60px;
 }
-.menu li {
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--sidebar-color);
+  height: 100%;
+  width: 250px;
+}
+.sidebar header .image-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.sidebar header .text {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar header .toggle {
+  font-size: 22px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 236px;
+  top: 20px;
+  color: var(--sidebar-color);
+}
+.sidebar header {
+  position: relative;
+}
+.sidebar li .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  font-size: 20px;
+  min-width: 60px;
 }
-.menu li:not(:first-child):hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
+.sidebar li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+  width: 100%;
+  color: var(--text-color);
 }
-.menu li:first-child:hover {
-  background-color: red;
-  color: white;
-  cursor: pointer;
+.sidebar .search-box {
+  background-color: var(--primary-color-light);
 }
-.menu.hide{
-    width: 100px;
+.search-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color-light);
+  border-radius: 6px;
+}
+.sidebar li a:hover {
+  background-color: var(--primary-color);
+}
+
+.sidebar li a:hover .text,
+.sidebar li a:hover .icon {
+  color: var(--sidebar-color);
+}
+.sidebar li{
+  height: 50px;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }

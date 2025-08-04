@@ -1,18 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <ul class="menu hide">
-        <li class="status">< == ></li>
-        <li>home</li>
-        <li>about</li>
-        <li>contact us</li>
-    </ul>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="Logo transparent new small webdevfree.png" alt="logo" />
+          </span>
+          <div class="text">
+            <span>front-end</span>
+            <span>web developer</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="search....." />
+          </li>
+
+          <ul class="menu-link hide">
+            <li>
+              <a href="#">
+                <i class="bx bx-home icon"></i>
+                <span class="text">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-bar-chart icon"></i>
+                <span class="text">Revenue</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-bell icon"></i>
+                <span class="text">Notifications</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-pie-chart icon"></i>
+                <span class="text">Analytics</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-heart icon"></i>
+                <span class="text">Like</span>
+              </a>
+            </li> <li>
+              <a href="#">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text">Wallet</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
