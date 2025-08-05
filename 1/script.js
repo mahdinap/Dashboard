@@ -1,5 +1,5 @@
-const pin=document.querySelector(".status")
-const menu=document.querySelector(".menu")
-pin.addEventListener("click",()=>{
-    menu.classList.toggle('hide')
+const switchBtn=document.querySelector(".toggle-switch")
+const body=document.querySelector("body")
+switchBtn.addEventListener("click",()=>{
+    body.classList.toggle("dark")    
 })
