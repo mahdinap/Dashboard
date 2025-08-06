@@ -3,66 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Dashboard Sidebar Menu| Dark-Light Mode</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
-  <body class="dark">
+  <body>
+
     <nav class="sidebar">
       <header>
         <div class="image-text">
           <span class="image">
             <img src="Logo transparent new small webdevfree.png" alt="logo" />
           </span>
-          <div class="text">
-            <span>front-end</span>
-            <span>web developer</span>
+          <div class="text header-text">
+            <span class="name">front-end</span>
+            <span class="profession">web developer</span>
           </div>
         </div>
+        
         <i class="bx bx-chevron-right toggle"></i>
       </header>
       <div class="menu-bar">
         <div class="menu">
           <li class="search-box">
             <i class="bx bx-search icon"></i>
-            <input type="text" placeholder="search....." />
+            <input type="search" placeholder="search....." />
           </li>
 
-          <ul class="menu-link hide">
-            <li>
+          <ul class="menu-link">
+            <li class="nav-link">
               <a href="#">
                 <i class="bx bx-home icon"></i>
-                <span class="text">Dashboard</span>
+                <span class="text nav-text">Dashboard</span>
               </a>
             </li>
-            <li>
+            <li class="nav-link">
               <a href="#">
                 <i class="bx bx-bar-chart icon"></i>
                 <span class="text">Revenue</span>
               </a>
             </li>
-            <li>
+            <li class="nav-link">
               <a href="#">
                 <i class="bx bx-bell icon"></i>
                 <span class="text">Notifications</span>
               </a>
             </li>
-            <li>
+            <li class="nav-link">
               <a href="#">
                 <i class="bx bx-pie-chart icon"></i>
                 <span class="text">Analytics</span>
               </a>
             </li>
-            <li>
+            <li class="nav-link">
               <a href="#">
                 <i class="bx bx-heart icon"></i>
                 <span class="text">Like</span>
               </a>
             </li>
-            <li>
+            <li class="nav-link">
               <a href="#">
                 <i class="bx bx-wallet icon"></i>
                 <span class="text">Wallet</span>
@@ -70,13 +72,17 @@
             </li>
           </ul>
         </div>
+
+
         <div class="btn-content">
-          <li>
+
+          <li >
             <a href="#">
               <i class="bx bx-log-out icon"></i>
               <span class="text">Log Out</span>
             </a>
           </li>
+
           <li class="mode">
             <div class="moon-sun">
               <i class="bx bx-moon icon moon"></i>
@@ -90,6 +96,9 @@
         </div>
       </div>
     </nav>
+    <section class="home">
+      <div class="text">Dashboard</div>
+    </section>
 
     <script src="./script.js"></script>
   </body>
